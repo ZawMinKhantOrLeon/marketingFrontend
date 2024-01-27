@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,900;1,300&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 500vh;
+}
+.site-logo{
+    width: 150px;
+}
+.site-nav{
+    position: absolute;
+    top: 0px;
+    z-index: 100000000;
+    
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.site-nav-scroll{
+    position:fixed;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.5px black;
+    animation: toshow  1s linear;
+}
+.site-nav-scroll .nav-link{
+    color: #7E76f9 !important;
+}
+.site-nav-scroll .menu-icon{
+    color: #7E76f9;
+}
+.nav-link.set-active{
+    border: 2px solid white;
+    border-radius: 10rem;
+    padding: 0.5rem 1.3rem !important;
+
+}
+.site-nav-scroll .nav-link.set-active{
+    border: 2px solid black;
+    border-radius: 10rem;
+    padding: 0.5rem 1.3rem !important;
+
+}
+@keyframes toshow{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+.test{
+    
+    font-weight: bolder;
+    z-index: 1000000;
+}
+.home{
+    background-image: url("../img/bg-shape.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50%;
+   
+    position: relative;
+}
+.about-text{
+    background-image: url('../img/bg-2.svg');
+    background-size: 100%;
+    background-position: center;
+
+}
+.about{
+    background-color: #7E76f910;
+}
+.service{
+    background-image: url('../img/bg-3.svg');
+    background-size: 100%;
+    background-position: center;
+}
+.card-service{
+    border-radius:35px;
+    border: none;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.05);
+}
+.card-service:hover{
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
+    transform: scale(1.009);
+
+}
+.service-card-des{
+    height: 180px;
+}
+.pricing{
+    background-color: #63608815;
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slick-dots li{
+    width: 10px !important;
+    height: 10px !important;
+    border: 2px solid #7E76f9 !important;
+    border-radius: 50% !important;
+}
+.slick-dots li.slick-active{
+    background-color: #7E76f9;
+    width: 15px !important;
+    height: 15px !important;
+}
+.footer{
+    background:url('../img/footer-1.svg'),url('../img/footer-2.svg') ;
+    background-size:120%,120%;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 150px 0px ;
+    position: relative;
+}
+.scroll-to-next{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    margin:0 auto;
+}
+.social-v{
+    position: absolute;
+    bottom:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 100px;
+}
+.animate-delay-1{
+    animation-delay: 0.5s;
+}
+/* {--i just don't know how to handel this foking error so....i use the solution came up with my donkey brain---} */
+/* does not work so i delete it   */
+.animate-delay-2{
+    animation-delay: 1s;
+}
+.animate-delay-3{
+    animation-delay: 1.5s !important;
+}
+.animate-delay-4{
+    animation-delay: 2s;
+}
+.animate-delay-3{
+    animation-delay:2.5s ;
+}
+.social-v a{
+    transition: 0.5s;
+}
+.social-v a:hover{
+    transform: scale(1.5);
+}
+.m-icons{
+    transition: 0.5s;
+}
+.m-icons:hover{
+    transform: scale(1.5);
+}
+@media screen and (max-width:768px){
+    .footer{
+        background-size: cover;
+        background-position: center;
+    }
+    .control{
+        columns: 2;
+        display: flex;
+    }
+    .cards{
+        width: 300px !important;
+    }
+    .one{
+        margin-right: 150px;           
+    }
+    .three{
+        margin-right: 150px;      
+    }
+    .five{
+        margin-right: 150px;     
+    }
+    .site-nav{
+        background-color:#ffffffee;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 5px #00000015;
+        
+    }
+    .navbar-nav{
+        margin-top: 20px;
+    }
+    .site-nav .menu-icon{
+        color: #7E76f9 !important;
+    }
+    .site-nav .nav-link{
+        color: #7E76f9 !important;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        background: #ffffff;
+        box-shadow: 0 0 5px #00000015;
+        border-radius: 10rem;
+    }
+    .nav-link.set-active{
+        border: 2px solid white;
+        border-radius: 10rem;
+        padding: 0.5rem 1.3rem !important;
+    }
+    .nav-link.set-active{
+        border: 2px solid black;
+        border-radius: 10rem;
+        padding: 0.5rem 1.3rem !important;
+    }
+    
+    
+}
+@media screen and (max-width:576px){
+    .content-2,.content-2-text{
+        width: 100% !important;
+    }
+    .footer{
+        background-size: cover;
+        background-position: center;
+    }
+   
+    .cards{
+        width: 100% !important;
+       margin-left: 16px;
+    }
+   
+    .social-v{
+        bottom: 350px;
+        left: 340px;
+    }
+   
+    .scroll-to-next{
+       left: 300px;
+    }
+    
+    .mouse{
+        width: 20px;
+    }
+    .content{
+        width: 80% !important;
+    }
+    .site-nav{
+        background-color:#ffffffee;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 5px #00000015;
+        
+    }
+    .navbar-nav{
+        margin-top: 20px;
+    }
+    .site-nav .menu-icon{
+        color: #7E76f9 !important;
+    }
+    .site-nav .nav-link{
+        color: #7E76f9 !important;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        background: #ffffff;
+        box-shadow: 0 0 5px #00000015;
+        border-radius: 10rem;
+    }
+    .nav-link.set-active{
+        border: 2px solid black;
+        border-radius: 10rem;
+        padding: 0.5rem 1.3rem !important;
+    }
+   
+}
